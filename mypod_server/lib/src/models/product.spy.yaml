@@ -1,0 +1,11 @@
+class: Product
+table: product
+
+fields:
+    name: String
+    units: String
+    minSize: int
+    cost: double
+    categoryId: int
+    shopId: int
+    imageUrl: String

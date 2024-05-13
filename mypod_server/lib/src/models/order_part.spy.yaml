@@ -1,0 +1,8 @@
+class: OrderPart
+table: order_part
+
+fields:
+    productId: int
+    amount: int
+    orderId: int
+    status: String

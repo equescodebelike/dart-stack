@@ -1,0 +1,7 @@
+class: Order
+table: order
+
+fields:
+    orderDate: DateTime
+    customerId: int
+    addresss: String
