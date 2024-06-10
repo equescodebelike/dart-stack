@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Dart Server Debug",
+        "request": "launch",
+        "type": "dart",
+        "program": "bin/main.dart",
+        "cwd": "${workspaceFolder}/mypod_server"
+      }
+    ]
+  }
+  

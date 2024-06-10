@@ -15,6 +15,11 @@ import 'order.dart' as _i3;
 import 'order_part.dart' as _i4;
 import 'product.dart' as _i5;
 import 'user.dart' as _i6;
+import 'package:mypod_client/src/protocol/category.dart' as _i7;
+import 'package:mypod_client/src/protocol/order.dart' as _i8;
+import 'package:mypod_client/src/protocol/order_part.dart' as _i9;
+import 'package:mypod_client/src/protocol/product.dart' as _i10;
+import 'package:mypod_client/src/protocol/user.dart' as _i11;
 export 'category.dart';
 export 'order.dart';
 export 'order_part.dart';
@@ -69,6 +74,26 @@ class Protocol extends _i1.SerializationManager {
     }
     if (t == _i1.getType<_i6.User?>()) {
       return (data != null ? _i6.User.fromJson(data, this) : null) as T;
+    }
+    if (t == List<_i7.Category>) {
+      return (data as List).map((e) => deserialize<_i7.Category>(e)).toList()
+          as dynamic;
+    }
+    if (t == List<_i8.Order>) {
+      return (data as List).map((e) => deserialize<_i8.Order>(e)).toList()
+          as dynamic;
+    }
+    if (t == List<_i9.OrderPart>) {
+      return (data as List).map((e) => deserialize<_i9.OrderPart>(e)).toList()
+          as dynamic;
+    }
+    if (t == List<_i10.Product>) {
+      return (data as List).map((e) => deserialize<_i10.Product>(e)).toList()
+          as dynamic;
+    }
+    if (t == List<_i11.User>) {
+      return (data as List).map((e) => deserialize<_i11.User>(e)).toList()
+          as dynamic;
     }
     return super.deserialize<T>(data, t);
   }

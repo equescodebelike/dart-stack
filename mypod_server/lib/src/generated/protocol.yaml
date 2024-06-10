@@ -1,2 +1,27 @@
+category:
+  - createCategory:
+  - getAllCategories:
+  - updateCategory:
+  - deleteCategory:
 example:
   - hello:
+order:
+  - createOrder:
+  - getAllOrders:
+  - updateOrder:
+  - deleteOrder:
+orderPart:
+  - createOrderPart:
+  - getAllOrderParts:
+  - updateOrderPart:
+  - deleteOrderPart:
+product:
+  - createProduct:
+  - getAllProducts:
+  - updateProduct:
+  - deleteProduct:
+user:
+  - createUser:
+  - getAllUsers:
+  - updateUser:
+  - deleteUser:
